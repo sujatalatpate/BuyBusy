@@ -1,0 +1,119 @@
+.container
+{
+    background-color: rgb(249, 246, 246);
+    height: 100%;
+}
+.searchBox
+{
+    margin-left: 500px;
+    padding-top: 50px;
+}
+.searchBox input
+{
+    width: 400px;
+    height:70px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    font-size: x-large;
+    color: blue;
+    outline: blue;
+}
+ .searchBox input:active
+ {
+    border: 1px solid blue;
+ }
+.home
+{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+.filter
+{
+    position: fixed;
+    height: 430px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: larger;
+    margin-top: 10px;
+    background-color: rgb(240, 237, 242);
+}
+.filter input
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 13px;
+}
+.filter label
+{
+    font-size:22px;
+}
+.selectedItems
+{
+  padding-left: 20px;
+}
+.selectedItems input
+{
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+.headings
+{
+   text-align: center;
+}
+.headings input{
+    margin-top: 20px;
+    width: 200px;
+}
+.catagoryContainer
+{
+    margin-left: 40px;
+}
+/* .data
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 200px;
+    margin-left: 70px;
+    
+   
+}
+.item
+{
+    width: 330px;
+    height: 650px;
+    border-radius: 20px;
+    background-color: white;
+    align-items: center;
+    padding-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item img{
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    
+}
+.item p
+{
+    font-size:x-large;
+}
+.item button
+{
+    width: 290px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #7064e5;
+    border: 1px solid #7064e5;
+    color: white;
+    font-size:x-large;
+}
+.item button:hover
+{
+    background-color: white;
+    color: #7064e5;
+    transition: all 0.3s ease-in-out;
+} */

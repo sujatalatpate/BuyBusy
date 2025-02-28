@@ -1,0 +1,29 @@
+.tableContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+table
+{
+    width: 850px;
+    
+}
+table tr{
+    background-color: rgb(247, 242, 242);
+    /* //rgb(250, 247, 247) */
+}
+table th{
+    border-bottom: 3px solid black;
+    height: 50px;
+    font-size: larger;
+}
+table td{
+    font-size: large;
+    height: 50px;
+}
+table th, tr{
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+.item
+{
+    width: 330px;
+    height: 700px;
+    border-radius: 20px;
+    background-color: white;
+    align-items: center;
+    padding-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item img{
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    
+}
+.item p
+{
+    font-size:x-large;
+}
+.item button
+{
+    width: 290px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #7064e5;
+    border: 1px solid #7064e5;
+    color: white;
+    font-size:x-large;
+}
+.item button:hover
+{
+    background-color: white;
+    color: #7064e5;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
