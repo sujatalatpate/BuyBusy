@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { toast } from "react-toastify";
+
 import style from "./Login.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import app from "../../../firebase";

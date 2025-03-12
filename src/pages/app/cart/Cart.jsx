@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import style from "../../../components/product/product.module.css";
+import style from "./Cart.module.css"
 import ProductCart from "../../../components/product/product";
 import { useCart } from "../../../context/cartContext";
 import { AuthContext, useAuth } from "../../../context/auth";

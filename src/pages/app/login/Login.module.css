@@ -37,6 +37,7 @@ form{
     background-color: rgb(108, 108, 244);
     font-size: x-large;
     color: white;
+    cursor: pointer;
 }
 .login_container p
 {

@@ -1,16 +1,14 @@
-.data
+/* .data
 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 100px;
-    margin-left: 70px;  
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 5rem 3rem;
 }
 .item
 {
-    width: 330px;
-    height: 700px;
+    width: 200px;
+    height: 550px;
     border-radius: 20px;
     background-color: white;
     align-items: center;
@@ -18,19 +16,19 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .item img{
-    width: 250px;
-    height: 350px;
-    padding: 20px;
+    width: 170px;
+    height: 250px;
+    padding: 10px;
     
 }
 .item p
 {
-    font-size:x-large;
+    font-size:larger;
 }
 .item button
 {
-    width: 290px;
-    height: 70px;
+    width: 190px;
+    height: 50px;
     border-radius: 10px;
     background-color: #7064e5;
     border: 1px solid #7064e5;
@@ -119,3 +117,327 @@
     color: red;
     cursor: pointer;
 }
+
+.img img
+{
+    width:230px;
+    height:220px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1200px) {
+    .data{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product
+    {
+        width: 70vw;
+    }
+    .item
+    {
+        width: 230px;
+        height: 700px;
+    }
+    
+    .item img{
+        width: 200px;
+        height: 300px;
+        padding: 10px;
+    }
+    .item button
+    {
+        width: 200px;
+        height: 100px;
+    }
+}
+@media screen and (max-width:900px) {
+    .data{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+
+.data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 5rem 3rem;
+    margin-right: 10rem;
+    
+  }
+  
+  .item {
+    width: 200px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: white;
+    align-items: center;
+    padding-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .item img {
+    width: 170px;
+    height: 250px;
+    padding: 10px;
+  }
+  
+  .item p {
+    font-size: larger;
+  }
+  
+  .item button {
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #7064e5;
+    border: 1px solid #7064e5;
+    color: white;
+    font-size: x-large;
+  }
+  
+  .item button:hover {
+    background-color: white;
+    color: #7064e5;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .cartContainer {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin-top: 0px;
+  }
+  
+  .left {
+    background-color: rgb(253, 245, 245);
+    margin-top: 150px;
+    margin-left: 10px;
+    height: 200px;
+    align-content: center;
+    border-radius: 10px;
+  }
+  
+  .con {
+    margin-left: 20px;
+  }
+  
+  .left button {
+    margin-left: 50px;
+    width: 140px;
+    height: 40px;
+    background-color: #7064e5;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: x-large;
+  }
+  
+  .priceContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .qty {
+    margin: 5px;
+  }
+  
+  .quantity button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    border: none;
+  }
+  
+  .quantity button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+  }
+  
+  .remove button {
+    background-color: red;
+    border: none;
+    color: white;
+    border: 1px solid red;
+  }
+  
+  .remove button:hover {
+    background-color: white;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .img img {
+    width: 230px;
+    height: 220px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 1024px) {
+    .data {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 3rem 2rem;
+    }
+  
+    .cartContainer {
+      grid-template-columns: 1fr;
+      margin-top: 2rem;
+    }
+  
+    .item {
+      width: 180px;
+      height: 500px;
+    }
+  
+    .item img {
+      width: 150px;
+      height: 230px;
+    }
+  
+    .item button {
+      width: 170px;
+      height: 45px;
+    }
+  
+    .left {
+      margin-top: 100px;
+      margin-left: 5px;
+      height: 180px;
+    }
+  
+    .left button {
+      width: 120px;
+      height: 35px;
+      font-size: large;
+    }
+  
+    .priceContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .quantity {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .data {
+      grid-template-columns: 1fr;
+      margin: 2rem 1rem;
+    }
+  
+    .item {
+      width: 100%;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+  
+    .item img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .item button {
+      width: 100%;
+      height: 45px;
+    }
+  
+    .cartContainer {
+      grid-template-columns: 1fr;
+      margin-top: 1rem;
+    }
+  
+    .left {
+      margin-top: 80px;
+      height: 150px;
+    }
+  
+    .left button {
+      width: 110px;
+      height: 30px;
+    }
+  
+    .priceContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .quantity {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img img {
+      width: 200px;
+      height: 190px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .item {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  
+    .item img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .item button {
+      width: 100%;
+      height: 40px;
+    }
+  
+    .left {
+      margin-top: 50px;
+      height: 130px;
+    }
+  
+    .left button {
+      width: 100px;
+      height: 30px;
+    }
+  
+    .priceContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .quantity {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img img {
+      width: 180px;
+      height: 170px;
+    }
+  }
+/* .quantity
+{
+  display: flex;
+  flex-direction: row;
+}
+  .quantity button
+  {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  } */

@@ -109,7 +109,7 @@ function Home() {
          
           </div>
           
-          <div>
+          <div className={style.product}>
             <ProductCart products={filteredProducts}/>
           </div>
         </div>

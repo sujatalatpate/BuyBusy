@@ -54,7 +54,7 @@ function ProductCart({products=[]}) {
   };
 
   return (
-    <div>
+    <div className={style.product}>
       <ToastContainer />
       <div className={style.data}>
         {products.map((item) => {
