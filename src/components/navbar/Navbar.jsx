@@ -12,7 +12,7 @@ function Navbar() {
       <nav>
         <div className={style.nav_container}>
           <Link to="/">
-            <h1 style={{ padding: "50px" }}>Shopii</h1>
+            <h1 style={{ padding: "50px" }}>Shopi</h1>
           </Link>
           <div className={style.nav_icons}>
             <Link to="/">
