@@ -18,7 +18,7 @@ function Cart() {
     totalPrice,
     increaseQuantity,
     decreaseQuantity,
-    handleRemoveFromCart,
+    handleRemoveFromCart
   } = useCart();
 
 
